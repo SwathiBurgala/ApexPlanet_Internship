@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of the flex container */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px; /* Limit the max width of the container */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-image-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-list-container {
+    margin-bottom: 30px;
+}
+
+#country-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between list items */
+}
+
+#country-list li {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    flex: 1 1 auto; /* Allow items to grow and shrink */
+    min-width: 150px; /* Minimum width for list items */
+    max-width: 200px; /* Maximum width for list items */
+    text-align: center;
+}
+
+#country-list li:hover {
+    background-color: #0056b3;
+}
+
+.country-info {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e9f5ff;
+    display: none; /* Hidden by default, shown by JavaScript */
+    text-align: center;
+    min-height: 150px; /* Ensure some height even when empty */
+}
+
+.country-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
